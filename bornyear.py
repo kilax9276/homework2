@@ -1,11 +1,15 @@
 
-is_bad_answer = True
+print('Скажите а вы знаете когда родился А.С. Пушкин?')
+answer_year = input('Сначала введите год')
 
-while  is_bad_answer:
-    answer = input('Tell me, when A.S. Pushkin was born?')
+if int(answer_year) != 1799:
+    print('Неверный год')
+    exit(0)
 
-    if answer == "06.07.1799":
-        print('You are right!')
-        is_bad_answer = False
-    else:
-        print('Try again!')
+answer_month = input('Теперь введите месяц')
+answer_day = input('А теперь введите день')
+
+if int(answer_month) != 7 and int(answer_day) != 6
+    print('Неверный день рождения')
+else:
+    print('Верно')
